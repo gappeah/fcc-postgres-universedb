@@ -48,7 +48,7 @@ SET default_table_access_method = heap;
 --
 
 CREATE TABLE public.blackhole (
-    blackhold_id integer NOT NULL,
+    blackhole_id integer NOT NULL,
     gravity integer,
     galaxy_id integer,
     wormhold boolean DEFAULT false NOT NULL,
@@ -59,10 +59,10 @@ CREATE TABLE public.blackhole (
 ALTER TABLE public.blackhole OWNER TO freecodecamp;
 
 --
--- Name: blackhole_blackhold_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
+-- Name: blackhole_blackhole_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
 --
 
-CREATE SEQUENCE public.blackhole_blackhold_id_seq
+CREATE SEQUENCE public.blackhole_blackhole_id_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -71,13 +71,13 @@ CREATE SEQUENCE public.blackhole_blackhold_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.blackhole_blackhold_id_seq OWNER TO freecodecamp;
+ALTER TABLE public.blackhole_blackhole_id_seq OWNER TO freecodecamp;
 
 --
--- Name: blackhole_blackhold_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
+-- Name: blackhole_blackhole_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
 --
 
-ALTER SEQUENCE public.blackhole_blackhold_id_seq OWNED BY public.blackhole.blackhold_id;
+ALTER SEQUENCE public.blackhole_blackhole_id_seq OWNED BY public.blackhole.blackhole_id;
 
 
 --
@@ -229,10 +229,10 @@ ALTER SEQUENCE public.star_star_id_seq OWNED BY public.star.star_id;
 
 
 --
--- Name: blackhole blackhold_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+-- Name: blackhole blackhole_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
 
-ALTER TABLE ONLY public.blackhole ALTER COLUMN blackhold_id SET DEFAULT nextval('public.blackhole_blackhold_id_seq'::regclass);
+ALTER TABLE ONLY public.blackhole ALTER COLUMN blackhole_id SET DEFAULT nextval('public.blackhole_blackhole_id_seq'::regclass);
 
 
 --
@@ -345,10 +345,10 @@ INSERT INTO public.star VALUES (7, 23474700, 'blue', 'Jerusalem', 2);
 
 
 --
--- Name: blackhole_blackhold_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
+-- Name: blackhole_blackhole_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.blackhole_blackhold_id_seq', 5, true);
+SELECT pg_catalog.setval('public.blackhole_blackhole_id_seq', 5, true);
 
 
 --
@@ -392,7 +392,7 @@ ALTER TABLE ONLY public.blackhole
 --
 
 ALTER TABLE ONLY public.blackhole
-    ADD CONSTRAINT blackhole_pkey PRIMARY KEY (blackhold_id);
+    ADD CONSTRAINT blackhole_pkey PRIMARY KEY (blackhole_id);
 
 
 --
