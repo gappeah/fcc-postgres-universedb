@@ -1,6 +1,6 @@
-#Universe Database
+# Universe Database
 
-##This is a PostgreSQL database schema dump for a universe simulation. It includes tables for:
+## This is a PostgreSQL database schema dump for a universe simulation. It includes tables for:
 
     Black Holes
     Galaxies
@@ -8,7 +8,7 @@
     Planets
     Stars
 
-##Tables
+## Tables
 
     blackhole
         blackhole_id (integer, primary key)
@@ -41,13 +41,13 @@
         name (text, unique)
         galaxy_id (integer, foreign key referencing galaxy.galaxy_id)
 
-##Relationships
+## Relationships
 
     Stars can belong to Galaxies (one-to-many)
     Planets can belong to Stars (one-to-many)
     Moons can belong to Planets (one-to-many)
 
-##Additional Notes
+## Additional Notes
 
     This schema dump includes data for all the tables.
     Some tables have unique constraints on specific columns.
