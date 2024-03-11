@@ -1,6 +1,6 @@
-# Universe Database
+# Celestial Bodies Database
 
-## This is a PostgreSQL database schema dump for a universe simulation. It includes tables for:
+## PostgreSQL database schema dump which stores information about celestial bodies. It includes tables for:
 
     Black Holes
     Galaxies
