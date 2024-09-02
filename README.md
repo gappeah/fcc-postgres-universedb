@@ -3,6 +3,7 @@
 This project is a PostgreSQL database called **Universe**, designed to model a simplified version of a cosmic system, including galaxies, stars, planets, moons, and black holes. The database schema consists of several tables, each representing a different celestial entity, and includes relationships between these entities. The project uses PostgreSQL 12.9, and this README provides an overview of the database structure, the entities involved, and instructions on how to set up and use the database.
 
 ## Database Schema
+![diagram-export-02-09-2024-15_30_02](https://github.com/user-attachments/assets/386c23b3-0853-4f73-aed7-685289253f12)
 
 The **Universe** database consists of the following tables:
 
