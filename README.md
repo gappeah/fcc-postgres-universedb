@@ -111,10 +111,4 @@ Once the database is set up, you can perform SQL queries to explore and analyze 
 
 This project is open-source and licensed under the MIT License. Feel free to use, modify, and distribute this code as per the terms of the license.
 
-## Author
 
-This project was created by [Your Name]. If you have any questions or suggestions, feel free to contact me at [your email].
-
----
-
-This README file provides a comprehensive overview of the Universe database project, detailing its structure, initial data, and usage instructions. Feel free to modify and expand upon it as needed.
